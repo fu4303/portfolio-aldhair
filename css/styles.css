@@ -2,3 +2,26 @@
 font-family: 'Poppins', sans-serif;
 font-family: 'Roboto', sans-serif; 
 */
+
+*,
+*::after,
+*::before {
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #fdfdfd;
+  margin: 0;
+  font-family: "Roboto", sans-serif;
+  color: #858585;
+  font-size: 1.5rem;
+}
+
+/**=======
+Typography
+======== */
+
+.hero-title,
+.section-title {
+  color: rgba(0, 0, 0, 78%);
+}
