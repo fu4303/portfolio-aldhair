@@ -11,21 +11,28 @@
     <title>aldhair escobar</title>
   </head>
   <body>
-    <header>
-      <div class="container container-flex">
+    <header class="main-grid">
+      <div class="header-content container container-flex">
         <div class="logo"><strong>aldhair</strong>escobar</div>
-        <nav>
-          <ul>
-            <li><a href="#">home</a></li>
-            <li><a href="#">cv</a></li>
-            <li><a href="#proyects">projects</a></li>
-            <li><a href="#contact">contact</a></li>
+
+        <button aria-label="Open navigation" class="open-nav">&#9776;</button>
+
+        <nav class="nav">
+          <ul class="nav-list">
+            <li class="nav-item"><a class="nav-link" href="#">home</a></li>
+            <li class="nav-item"><a class="nav-link" href="#">cv</a></li>
+            <li class="nav-item">
+              <a class="nav-link" href="#proyects">projects</a>
+            </li>
+            <li class="nav-item">
+              <a class="nav-link" href="#contact">contact</a>
+            </li>
           </ul>
         </nav>
       </div>
     </header>
 
-    <div class="main-container container-flex">
+    <div class="main-grid main-container container-flex">
       <div class="hero">
         <h1 class="hero-title">Hi, I’m Aldhair!</h1>
         <p class="hero-description">
@@ -34,16 +41,16 @@
           problem-solving.
         </p>
         <a class="btn btn-hero" href="">Get in touch</a>
+        <img class="profile-img" src="./img/prof.png" alt="" />
       </div>
-      <div class="profile-img">
-        <img src="" alt="" />
-      </div>
+      <!--  <div class="profile-img"> -->
+      <!-- </div> -->
     </div>
 
-    <div class="main-container">
+    <div class="main-grid main-container">
       <main class="main">
         <div class="section about-me-section">
-          <h2 class="section-title">About me</h2>
+          <h2 class="section-title about-me-title">About me</h2>
           <p>
             I love coding and I’m currently working with HTML, CSS, JavaScript
             and ReactJs. I’m also building projects that require a server-side
@@ -53,99 +60,132 @@
           </p>
         </div>
         <div class="section skills-section">
-          <h2 class="section-title">Skills</h2>
+          <h2 class="section-title skills-section-title">Skills</h2>
           <div class="skills-section-feature">
             <h3 class="skills-section-subtitle">Frontend Knowledge</h3>
-            <p>HTML, CSS, JavaScript, ReactJs, Jquery, Bootstrap, EJS.</p>
+            <p class="skills-section-description">
+              HTML, CSS, JavaScript, ReactJs, Jquery, Bootstrap, EJS.
+            </p>
           </div>
           <div class="skills-section-feature">
             <h3 class="skills-section-subtitle">General knowledge</h3>
-            <p>NodeJs, ExpressJs, MongoDB, Mongoose, Git and Github, Figma.</p>
+            <p class="skills-section-description">
+              NodeJs, ExpressJs, MongoDB, Mongoose, Git and Github, Figma.
+            </p>
           </div>
           <div class="skills-section-feature">
             <h3 class="skills-section-subtitle">I'm currently learning...</h3>
-            <p>ReactJs in deep.</p>
+            <p class="skills-section-description">ReactJs in deep.</p>
           </div>
         </div>
         <div id="projects" class="section projects-section">
-          <h2 class="section-title">Projects</h2>
+          <h2 class="section-title projects-section-title">Projects</h2>
           <div class="cards-container">
             <div class="card">
-              <img class="card-img" src="" alt="" />
-              <p class="card-title">Keepit App (Google Keep Clone)</p>
-              <p class="card-small-description">
-                A simple app to take notes built with ReactJS.
-              </p>
-              <p class="card-description">
-                This project helped me to learn about “Hooks” and start using
-                “Material-UI”, practiced conditional rendering and JavaScript
-                methods.
-              </p>
-              <div class="card-technologies-container">
-                <div class="card-tech-bubble">ReactJs</div>
-                <div class="card-tech-bubble">CSS</div>
-                <div class="card-tech-bubble">HTML</div>
-                <div class="card-tech-bubble">Material-UI</div>
-                <div class="card-tech-bubble">React Hooks</div>
+              <div class="card-img-container">
+                <img class="card-img" src="./icons/keepitlogo.svg" alt="" />
+              </div>
+              <div class="card-content">
+                <p class="card-title">Keepit App (Google Keep Clone)</p>
+                <p class="card-small-description">
+                  A simple app to take notes built with ReactJS.
+                </p>
+                <p class="card-description">
+                  This project helped me to learn about “Hooks” and start using
+                  “Material-UI”, practiced conditional rendering and JavaScript
+                  methods.
+                </p>
+                <div class="card-technologies-container">
+                  <div class="card-tech-bubble">ReactJs</div>
+                  <div class="card-tech-bubble">CSS</div>
+                  <div class="card-tech-bubble">HTML</div>
+                  <div class="card-tech-bubble">Material-UI</div>
+                  <div class="card-tech-bubble">React Hooks</div>
+                  <a class="card-github-icon" href="">
+                    <img src="./icons/github-fill.svg" alt="" />
+                  </a>
+                </div>
               </div>
             </div>
             <div class="card">
-              <img class="card-img" src="" alt="" />
-              <p class="card-title">Daily Journal (Blog App)</p>
-              <p class="card-small-description">
-                A fullstack App to start your daily journal.
-              </p>
-              <p class="card-description">
-                With this awesome project I built a database and applied “CRUD”
-                so the user can have a full control of his daily journal.
-              </p>
-              <div class="card-technologies-container">
-                <div class="card-tech-bubble">NodeJs</div>
-                <div class="card-tech-bubble">ExpressJs</div>
-                <div class="card-tech-bubble">MongoDB</div>
-                <div class="card-tech-bubble">JavaScript</div>
-                <div class="card-tech-bubble">Mongoose</div>
-                <div class="card-tech-bubble">EJS</div>
-                <div class="card-tech-bubble">CSS</div>
+              <div class="card-img-container card-img-daily-journal">
+                <img class="card-img" src="./icons/dailyjournal.svg" alt="" />
+              </div>
+              <div class="card-content">
+                <p class="card-title">Daily Journal (Blog App)</p>
+                <p class="card-small-description">
+                  A fullstack App to start your daily journal.
+                </p>
+                <p class="card-description">
+                  With this awesome project I built a database and applied
+                  “CRUD” so the user can have a full control of his daily
+                  journal.
+                </p>
+                <div class="card-technologies-container">
+                  <div class="card-tech-bubble">NodeJs</div>
+                  <div class="card-tech-bubble">ExpressJs</div>
+                  <div class="card-tech-bubble">MongoDB</div>
+                  <div class="card-tech-bubble">JavaScript</div>
+                  <div class="card-tech-bubble">Mongoose</div>
+                  <div class="card-tech-bubble">EJS</div>
+                  <div class="card-tech-bubble">CSS</div>
+                  <a class="card-github-icon" href="">
+                    <img src="./icons/github-fill.svg" alt="" />
+                  </a>
+                </div>
               </div>
             </div>
             <div class="card">
-              <img class="card-img" src="" alt="" />
-              <p class="card-title">To-do List App</p>
-              <p class="card-small-description">
-                A simple To-do List Built with ReactJS.
-              </p>
-              <p class="card-description">
-                It helped me to practice with “Hooks” and start using
-                “useEffect”, learned more about conditional rendering and use
-                “uuid” dependency.
-              </p>
-              <div class="card-technologies-container">
-                <div class="card-tech-bubble">ReactJs</div>
-                <div class="card-tech-bubble">CSS</div>
-                <div class="card-tech-bubble">HTML</div>
-                <div class="card-tech-bubble">Material-UI</div>
-                <div class="card-tech-bubble">React Hooks</div>
+              <div class="card-img-container card-img-todo">
+                <img class="card-img" src="./icons/todolist.svg" alt="" />
+              </div>
+              <div class="card-content">
+                <p class="card-title">To-do List App</p>
+                <p class="card-small-description">
+                  A simple To-do List Built with ReactJS.
+                </p>
+                <p class="card-description">
+                  It helped me to practice with “Hooks” and start using
+                  “useEffect”, learned more about conditional rendering and use
+                  “uuid” dependency.
+                </p>
+                <div class="card-technologies-container">
+                  <div class="card-tech-bubble">ReactJs</div>
+                  <div class="card-tech-bubble">CSS</div>
+                  <div class="card-tech-bubble">HTML</div>
+                  <div class="card-tech-bubble">Material-UI</div>
+                  <div class="card-tech-bubble">React Hooks</div>
+                  <a class="card-github-icon" href="">
+                    <img src="./icons/github-fill.svg" alt="" />
+                  </a>
+                </div>
               </div>
             </div>
 
             <div class="card">
-              <img class="card-img" src="" alt="" />
-              <p class="card-title">Capstone Project (images e-commerce)</p>
-              <p class="card-small-description">
-                E-commerce app to buy some pictures (Client Project)
-              </p>
-              <p class="card-description">
-                A beautiful project that helps me work with "React Router",
-                "useContext" and practice with "Custom Hooks".
-              </p>
-              <div class="card-technologies-container">
-                <div class="card-tech-bubble">ReactJs</div>
-                <div class="card-tech-bubble">React Hooks</div>
-                <div class="card-tech-bubble">React Router</div>
-                <div class="card-tech-bubble">CSS</div>
-                <div class="card-tech-bubble">HTML</div>
-                <div class="card-tech-bubble">Material-UI</div>
+              <div class="card-img-container">
+                <img class="card-img" src="" alt="" />
+              </div>
+              <div class="card-content">
+                <p class="card-title">Capstone Project (images e-commerce)</p>
+                <p class="card-small-description">
+                  E-commerce app to buy some pictures (Client Project)
+                </p>
+                <p class="card-description">
+                  A beautiful project that helps me work with "React Router",
+                  "useContext" and practice with "Custom Hooks".
+                </p>
+                <div class="card-technologies-container">
+                  <div class="card-tech-bubble">ReactJs</div>
+                  <div class="card-tech-bubble">React Hooks</div>
+                  <div class="card-tech-bubble">React Router</div>
+                  <div class="card-tech-bubble">CSS</div>
+                  <div class="card-tech-bubble">HTML</div>
+                  <div class="card-tech-bubble">Material-UI</div>
+                  <a class="card-github-icon" href="">
+                    <img src="./icons/github-fill.svg" alt="" />
+                  </a>
+                </div>
               </div>
             </div>
           </div>
@@ -153,8 +193,8 @@
       </main>
     </div>
 
-    <footer>
-      <div class="container">
+    <footer class="main-grid">
+      <div class="footer container">
         <div class="footer-info">
           <h2 class="footer-title">Get In Touch</h2>
           <div class="footer-icons-container">
